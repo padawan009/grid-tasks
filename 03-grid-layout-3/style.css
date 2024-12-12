@@ -12,7 +12,6 @@
     'sidebar article'
     'footer footer';
   grid-template-columns: 1fr 4fr;
-  
   gap: 4px;
 }
 
@@ -29,13 +28,16 @@
   grid-area: header;
   display: grid;
   grid-auto-flow: column;
-  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-align: start;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
-  
 }
 
 .menu ul,
@@ -43,7 +45,6 @@
   display: grid;
   grid-auto-flow: column;
   list-style: none;
-  justify-content: space-around;
 }
 
 .sidebar {
@@ -51,7 +52,6 @@
   grid-area: sidebar;
   display: grid;
   gap: 50px;
- 
 }
 
 .sidebar .photo {
@@ -62,7 +62,6 @@
   border-radius: 10px;
   align-content: center;
 }
-
 
 .sidebar .side-content {
   background-color: white;
